@@ -34,12 +34,9 @@ def savings(gross_pay, tax_rate, expenses):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-gross_pay = int(input("Input your gross pay here: "))
-tax_rate = float(input("Input the tax rate in decimals here: "))
-expenses = int(input("Input your expenses here: "))
-def savings(gross_pay, tax_rate, expenses):
-    return((gross_pay * (1 - tax_rate)) - expenses)
-print(savings(gross_pay, tax_rate, expenses))
+    money_savings = (gross_pay * (1 - tax_rate)) - expenses
+    print(money_savings)
+savings(1000, 0.2, 100)
 
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
@@ -76,13 +73,9 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-total_material = int(input('Input the total amount of material here '))
-material_units = str(input('Input the unit of measurement of the material '))
-num_jobs = int(input('Input the total number of jobs here '))
-job_consumption = int(input('Input the total amount of jobs consumed here '))
-def material_waste(total_material, material_units, num_jobs, job_consumption):
-    return(str(total_material - (job_consumption * num_jobs)))
-print(material_waste(total_material, material_units, num_jobs, job_consumption)+material_units)
+    waste = (str(total_material - (job_consumption * num_jobs)))
+    print(waste + material_units)
+material_waste(1000, 'kg', 100, 2)
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -113,12 +106,10 @@ def interest(principal, rate, periods):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-principal = int(input('Input the principal (in centavos) here '))
-rate = float(input('Input the rate in decimals here '))
-periods = int(input('Input the amount of periods passed here '))
-def interest(principal, rate, periods):
-    return(principal + (principal * rate * periods))
-print(interest(principal, rate, periods)) 
+    investment = (principal + (principal * rate * periods))
+    print(investment)
+interest(1000, 0.03, 15)
+
 
 
 def body_mass_index(weight, height):
@@ -156,8 +147,8 @@ def body_mass_index(weight, height):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-def body_mass_index(weight, height):
     kg = 0.4535923 * (weight)
     meters = 0.3048 * (height[0]) + (1/12) * 0.3048 * (height[1])
-    return(str(kg / meters **2))
-body_mass_index(120, [5, 2])
+    bmi = (float(kg / meters **2))
+    print(bmi)
+body_mass_index(120, [5, 4])
