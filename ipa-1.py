@@ -35,8 +35,7 @@ def savings(gross_pay, tax_rate, expenses):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
     money_savings = (gross_pay * (1 - tax_rate)) - expenses
-    print(money_savings)
-savings(1000, 0.2, 100)
+    return(money_savings)
 
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
@@ -74,8 +73,8 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
     waste = (str(total_material - (job_consumption * num_jobs)))
-    print(waste + material_units)
-material_waste(1000, 'kg', 100, 2)
+    return(waste + material_units)
+
 
 def interest(principal, rate, periods):
     '''Interest.
@@ -107,8 +106,7 @@ def interest(principal, rate, periods):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
     investment = (principal + (principal * rate * periods))
-    print(investment)
-interest(1000, 0.03, 15)
+    return(investment)
 
 
 
@@ -150,5 +148,5 @@ def body_mass_index(weight, height):
     kg = 0.4535923 * (weight)
     meters = 0.3048 * (height[0]) + (1/12) * 0.3048 * (height[1])
     bmi = (float(kg / meters **2))
-    print(bmi)
-body_mass_index(120, [5, 4])
+    return(bmi)
+
