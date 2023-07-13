@@ -34,9 +34,8 @@ def savings(gross_pay, tax_rate, expenses):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-    money_savings = (gross_pay * (1 - tax_rate)) - expenses
+    money_savings = int((gross_pay * (1 - tax_rate)) - expenses)
     return(money_savings)
-
 
 def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''Material Waste.
@@ -105,10 +104,9 @@ def interest(principal, rate, periods):
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
 
-    investment = (principal + (principal * rate * periods))
+    investment = int((principal + (principal * rate * periods)))
     return(investment)
-
-
+    
 
 def body_mass_index(weight, height):
     '''Body Mass Index.
